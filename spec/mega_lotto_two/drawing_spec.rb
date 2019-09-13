@@ -10,6 +10,12 @@ module MegaLottoTwo
       it 'returns an Array with 5 elements' do
         expect(drawing.size).to eq(5)
       end
+
+      it 'return an Array of integers less than 60' do
+        drawing.each do |item|
+          expect(item).to be < 60
+        end
+      end
     end
   end
 end

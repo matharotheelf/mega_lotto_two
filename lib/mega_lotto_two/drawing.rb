@@ -1,7 +1,7 @@
 module MegaLottoTwo
   class Drawing
     def draw
-      Array.new(5)
+      5.times.map{0}
     end
   end
 end
